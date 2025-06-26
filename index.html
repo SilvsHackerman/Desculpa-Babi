@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desculpa, Gabi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <audio autoplay loop>
+    <source src="https://docs.google.com/uc?export=open&id=1oGDHgkl5uofF3zDEk4-UvNURnAhGSp29" type="audio/mp3">
+  </audio>
+
+  <!-- Carta inicial -->
+  <div id="carta-container">
+    <h2>📩 Você recebeu uma carta</h2>
+    <p>Tem algo importante aqui... quer abrir?</p>
+    <button onclick="abrirCarta()">Abrir a Carta</button>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div id="conteudo-site">
+    <h1>Gabi, me desculpa...</h1>
+    <p>
+      Você sempre foi muito mais que uma amiga pra mim. Era minha parceira de verdade. A pessoa pra quem eu mandava mensagem por qualquer coisa. Quem eu queria ver bem, todos os dias.
+      <br><br>
+      E mesmo assim, eu errei. Me envolvi com quem ocasionou tudo isso, e isso acabou afastando a gente. E essa distância tem me destruído por dentro.
+      <br><br>
+      Não teve um único dia em que você não passou pela minha cabeça. Não teve uma vez em que eu não tenha desejado ter feito diferente.
+      <br><br>
+      Eu sinto sua falta. Da tua risada, das conversas aleatórias, das preocupações que a gente dividia... de tudo.
+      <br><br>
+      Não tô aqui esperando que tudo volte ao normal, só queria que você soubesse que eu ainda me importo com você, de verdade. Que você sempre foi — e ainda é — a melhor amiga que eu já tive. Aliás vi que vc terminou seu curso, tô muito orgulhoso de você. Sério, queria ter dito pra você no dia que terminou essa jornada que você tanto batalhou.
+    </p>
+    <div class="heart">&#10084;</div>
+  </div>
+
+  <script>
+    function abrirCarta() {
+      document.getElementById("carta-container").style.display = "none";
+      document.getElementById("conteudo-site").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
